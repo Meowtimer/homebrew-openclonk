@@ -4,7 +4,7 @@ class Openclonk < Formula
   head 'http://git.openclonk.org/openclonk.git', :using => :git
   url 'https://github.com/openclonk/openclonk/archive/f1cc91055a7dfa6004021cfe6b721c9a15aa11a3.zip'
   homepage 'http://www.openclonk.org'
-  sha1 'c7e647147029d6ba9ad271e1a40aebbc54cf25a6'
+  sha1 '22025159684f1320c487f6f30937d33013e38b43'
   version "4.0+f1cc91055a7dfa6004021cfe6b721c9a15aa11a3"
 
   depends_on "cmake" => :build
