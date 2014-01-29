@@ -5,7 +5,7 @@ class Openclonk < Formula
 	url 'https://github.com/openclonk/openclonk/archive/acceeb72913bc60547747b74021778cac1891bce.zip'
 	homepage 'http://www.openclonk.org'
 	sha1 '64886d311f5844c385cf1c99c7e91e185a99025b'
-	version "4.0+f1cc91055a7dfa6004021cfe6b721c9a15aa11a3"
+	version "4.0+acceeb72913bc60547747b74021778cac1891bce"
 
 	depends_on "cmake" => :build
 	depends_on "jpeg"
