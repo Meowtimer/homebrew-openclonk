@@ -21,6 +21,7 @@ class Openclonk < Formula
 		if Formula.factory('freetype').installed?
 			args << "-DFREETYPE_INCLUDE_DIR_freetype2=#{HOMEBREW_PREFIX}/include/freetype2"
 			args << "-DFREETYPE_INCLUDE_DIR_ft2build=#{HOMEBREW_PREFIX}/include/freetype2"
+			args << "-DZLIB_LIBRARY=/usr/lib/libz.dylib"
 		end
 		system "cmake", ".", *args
 		system "make"
