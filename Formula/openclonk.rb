@@ -15,6 +15,7 @@ class Openclonk < Formula
   depends_on "glew"
   depends_on "libogg"
   depends_on "libvorbis"
+  depends_on "boost"
 
   def install
     system "cmake", ".", *std_cmake_args
