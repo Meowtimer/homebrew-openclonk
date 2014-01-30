@@ -2,10 +2,10 @@ require "formula"
 
 class Openclonk < Formula
 	head 'http://git.openclonk.org/openclonk.git', :using => :git
-	url 'https://github.com/openclonk/openclonk/archive/acceeb72913bc60547747b74021778cac1891bce.zip'
+	url 'https://github.com/openclonk/openclonk/archive/4299faefd4b9acd04b3b781d1831ee7d46d7923d.zip'
 	homepage 'http://www.openclonk.org'
-	sha1 '64886d311f5844c385cf1c99c7e91e185a99025b'
-	version "4.0+acceeb72913bc60547747b74021778cac1891bce"
+	sha1 '51165fe6270df9d24303deedebd46445bab5e626'
+	version "4.0+4299faefd4b9acd04b3b781d1831ee7d46d7923d"
 
 	depends_on "cmake" => :build
 	depends_on "jpeg"
