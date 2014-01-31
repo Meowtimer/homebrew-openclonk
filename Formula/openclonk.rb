@@ -1,11 +1,11 @@
 require "formula"
 
 class Openclonk < Formula
-	head 'http://git.openclonk.org/openclonk.git', :using => :git
-	url 'https://github.com/openclonk/openclonk/archive/4299faefd4b9acd04b3b781d1831ee7d46d7923d.zip'
+	head 'https://github.com/Meowtimer/openclonk.git', :using => :git
+	url 'https://github.com/Meowtimer/openclonk/archive/6ddc8b75170613eb9c21b3c7eb3a66a88c8c313e.zip'
 	homepage 'http://www.openclonk.org'
-	sha1 '51165fe6270df9d24303deedebd46445bab5e626'
-	version "4.0+4299faefd4b9acd04b3b781d1831ee7d46d7923d"
+	sha1 '39ad936119c134cef77c786c91257e81e080d5a7'
+	version "4.0+6ddc8b75170613eb9c21b3c7eb3a66a88c8c313e"
 
 	depends_on "cmake" => :build
 	depends_on "jpeg"
