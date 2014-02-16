@@ -2,10 +2,10 @@ require "formula"
 
 class Openclonk < Formula
 	head 'https://github.com/Meowtimer/openclonk.git', :using => :git
-	url 'https://github.com/Meowtimer/openclonk/archive/92186db246cd0fff7d5b4a40d07560bc2814bc4c.zip'
+	url 'https://github.com/Meowtimer/openclonk/archive/1066c4a4b3fe50d98f63cf27c417ba17cf1aece6.zip'
 	homepage 'http://www.openclonk.org'
-	sha1 '57af96ba4d8c0ea9ee601db18a7ab02ebe95c6db'
-	version "4.0+92186db246cd0fff7d5b4a40d07560bc2814bc4c"
+	sha1 '68b6c5c4bf0177aa94647a1b5413287b599c9128'
+	version "5.4.1"
 
 	depends_on "cmake" => :build
 	depends_on "jpeg"
