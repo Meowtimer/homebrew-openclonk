@@ -1,8 +1,8 @@
 require "formula"
 
 class Openclonk < Formula
-	head 'https://github.com/Meowtimer/openclonk.git', :using => :git
-	url 'https://github.com/Meowtimer/openclonk/archive/1066c4a4b3fe50d98f63cf27c417ba17cf1aece6.zip'
+	head 'https://github.com/openclonk/openclonk', :using => :git
+	url 'https://github.com/openclonk/openclonk/archive/1066c4a4b3fe50d98f63cf27c417ba17cf1aece6.zip'
 	homepage 'http://www.openclonk.org'
 	sha1 '68b6c5c4bf0177aa94647a1b5413287b599c9128'
 	version "5.4.1"
