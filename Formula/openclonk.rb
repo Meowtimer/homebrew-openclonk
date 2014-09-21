@@ -15,6 +15,7 @@ class Openclonk < Formula
 	depends_on "libogg"
 	depends_on "libvorbis"
 	depends_on "boost"
+	depends_on "freealut"
 
 	def install
 		args = std_cmake_args
