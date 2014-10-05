@@ -2,9 +2,9 @@ require "formula"
 
 class Openclonk < Formula
 	head 'https://github.com/openclonk/openclonk', :using => :git
-	url 'https://github.com/openclonk/openclonk/archive/1066c4a4b3fe50d98f63cf27c417ba17cf1aece6.zip'
+	url 'https://github.com/openclonk/openclonk/archive/fd8b81c33e094b4c71f3b351f5a46026a77846e2.zip'
 	homepage 'http://www.openclonk.org'
-	sha1 '68b6c5c4bf0177aa94647a1b5413287b599c9128'
+	sha1 '4f25c00fc74c9ae542b7b645c36c5f68c0477ac7'
 	version "5.4.1"
 
 	depends_on "cmake" => :build
