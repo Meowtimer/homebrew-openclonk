@@ -11,4 +11,4 @@ before_install:
 
 script:
   - brew tap meowtimer/openclonk
-  - brew install openclonk --HEAD
+  - brew install openclonk --HEAD -v
