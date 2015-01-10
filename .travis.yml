@@ -1,14 +1,26 @@
 language: objective-c
-
 os:
-  - osx
-
+- osx
 install:
-  - brew update
-  - brew upgrade
-  - mkdir -p $(brew --repo)/Library/Taps/meowtimer
-  - ln -s $PWD $(brew --repo)/Library/Taps/meowtimer/homebrew-openclonk
-  - brew tap --repair
-
+- brew update
+- brew upgrade
+- mkdir -p $(brew --repo)/Library/Taps/meowtimer
+- ln -s $PWD $(brew --repo)/Library/Taps/meowtimer/homebrew-openclonk
+- brew tap --repair
 script:
-  - brew install openclonk --HEAD -v
+- brew install openclonk --HEAD -v
+- cd "$(brew --cellar)/openclonk/HEAD"
+- mkdir -p openclonk.app/Contents/Tools
+- cp c4group c4script openclonk.app/Contents/Tools
+- zip -r openclonk-mac.zip openclonk.app --verbose
+deploy:
+  provider: releases
+  api-key: GH_TOKEN
+  file: "$(brew --cellar)/openclonk/HEAD/openclonk-mac.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+env:
+  global:
+    secure: ygHD1ANKVxmJM20bCu3ucoeJyxL0ciEA/PP5f3DPwYzQz4bSRv0vR/3I7spnjEubph8NOJkLbOiOWJ4qfux08zAxW5PkJ4iuu/A0hAKfBKm/k2fWGX1UKLTESqZitxSXBEPOYVxGynOhYM08GpOdQSEPxWLzTRfYHDJuGLJrL4I=
