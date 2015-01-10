@@ -3,12 +3,12 @@ language: objective-c
 os:
   - osx
 
-before_install:
+install:
   - brew update
   - brew upgrade
-  - brew --env
-  - brew config
+  - mkdir -p $(brew --repo)/Library/Taps/meowtimer
+  - ln -s $PWD $(brew --repo)/Library/Taps/meowtimer/homebrew-openclonk
+  - brew tap --repair
 
 script:
-  - brew tap meowtimer/openclonk
   - brew install openclonk --HEAD -v
